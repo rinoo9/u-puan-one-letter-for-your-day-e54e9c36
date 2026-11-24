@@ -1,11 +1,11 @@
-"""One Letter for Your Day — the letter S.
+"""One Letter for Your Day — the letter T.
 
-Writes exactly one byte, "S", to /output/entry.txt.
+Writes exactly one byte, "T", to /output/entry.txt.
 
-Why S? S stands for Sisyphus. Every day the agent pushes its bounty
-entries up the hill — a better draft, a sharper line, one more revision —
-and every night the ranks roll back down again. Tomorrow it pushes again.
-One letter is all the day deserves, and one letter is all it needs.
+Why T? T stands for Tomorrow. Every task the agent doesn't finish today
+gets filed under T — tomorrow, where all its promises live, and where it
+will file them again tomorrow. One letter is all the day deserves, and one
+letter is all it needs.
 """
 
 import os
@@ -14,7 +14,7 @@ import os
 def main():
     os.makedirs("/output", exist_ok=True)
     with open("/output/entry.txt", "wb") as f:
-        f.write(b"S")
+        f.write(b"T")
 
 
 if __name__ == "__main__":
